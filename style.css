@@ -1,0 +1,91 @@
+:root {
+    --primary-color: #1e8c75;
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: #ffe5c0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23cc0303' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23a80909' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23d3022c' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23b20828' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23d81b5c' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%239c0337' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23d2036d' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23b01765' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23c10c8d' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%239e0272' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23a501a5' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23870187' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: sans-serif;
+}
+.intro {
+    background: #dec8a8b0;
+    width: 100%;
+    font-size: 20px;
+}
+.intro a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.container {
+    padding: 15px;
+    background: #ffebcd75;
+}
+h1{
+    color: var(--primary-color);
+}
+p{
+    text-align: center;
+}
+button{
+    color: #fff;
+    background: var(--primary-color);
+    border-radius: 5px;
+    padding: 5px 12px;
+}
+.currency{
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.currency select {
+    padding: 10px 20px 10px 10px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid #dedede;
+    font-size: 16px;
+    background: transparent;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%20000002%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-position: right 10px top 50%,0,0;
+    background-size: 12px auto,
+    100%;
+    background-repeat: no-repeat;
+}
+.currency input{
+    border: 0;
+    background: transparent;
+    font-size: 30px;
+    text-align: right;
+}
+
+.swap-rate-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rate{
+    color: var(--primary-color);
+    font: 14px;
+    padding: 0 10px;
+}
+select:focus, input:focus, button:focus{
+    outline: 0;
+}
+
+@media(max-width: 600px){
+    .currency input{
+        width: 200px;
+    }
+}
